@@ -1,0 +1,13 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "restapi-lambda-authorizer"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-bs44494k91a7"
+s3_prefix = "restapi-lambda-authorizer"
+region = "ap-south-1"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = [
+"Memory=2048"
+]  
+image_repositories = []
